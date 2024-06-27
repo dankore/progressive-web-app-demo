@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progressive Web App Demo</title>
+    <meta
+      name="description"
+      content="A demo Progressive Web App showcasing modern web capabilities and best practices for accessibility and performance."
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/icons/android-icon-48x48.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="72x72"
+      href="/icons/android-icon-72x72.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="144x144"
+      href="/icons/android-icon-144x144.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="36x36"
+      href="/icons/android-icon-36x36.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/icons/manifest.json" />
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:title" content="Progressive Web App Demo" />
+    <meta
+      property="og:description"
+      content="A demo Progressive Web App showcasing modern web capabilities and best practices for accessibility and performance."
+    />
+    <meta property="og:image" content="/icons/og-image.png" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Progressive Web App Demo" />
+    <meta
+      name="twitter:description"
+      content="A demo Progressive Web App showcasing modern web capabilities and best practices for accessibility and performance."
+    />
+    <meta name="twitter:image" content="/icons/twitter-image.png" />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+        <nav aria-label="Primary" class="bg-gray-800 text-white p-4">
+            <a href="#main-content" class="skip-link sr-only focus:not-sr-only">Skip to main content</a>
+            <ul class="flex space-x-4">
+                <li><a href="#features" class="hover:text-indigo-400">Features</a></li>
+                <li><a href="#pricing" class="hover:text-indigo-400">Pricing</a></li>
+                <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+      <section
+        aria-labelledby="promo"
+        class="bg-gray-900 text-center pt-32 pb-96 lg:pt-40 relative overflow-hidden"
+      >
+        <div>
+          <img
+            alt=""
+            src="/images/grid-blur-purple-on-black.jpg"
+            class="absolute bottom-0 left-1/2 w-[1440px] max-w-none -translate-x-1/2"
+          />
+        </div>
+        <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:max-w-4xl">
+            <h2
+              id="promo"
+              class="text-lg font-semibold leading-8 text-indigo-400"
+            >
+              Holiday Promo
+            </h2>
+            <p class="mt-2 text-4xl font-bold tracking-tight text-white">
+              Get a free website, <br class="hidden sm:inline lg:hidden" />this
+              holiday season
+            </p>
+            <p class="mt-6 text-lg leading-8 text-white/60">
+              You don't have to compromise speed, appearance and functionality
+              of your site. Our FREE promo website is created by using
+              cutting-edge techniques like server side rendering and an HTML
+              template engine with 99%+ guaranteed performance score.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="features" class="flow-root bg-white pb-32 lg:pb-40">
+        <div class="relative -mt-80">
+          <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+              class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2 lg:gap-8"
+            >
+              <div
+                class="flex flex-col rounded-3xl bg-white shadow-xl ring-1 ring-black/10"
+              >
+                <div class="p-8 sm:p-10">
+                  <h3
+                    class="text-lg font-semibold leading-8 tracking-tight text-indigo-600"
+                    id="free-tier"
+                  >
+                    Free
+                  </h3>
+                  <div
+                    class="mt-4 flex items-baseline text-5xl font-bold tracking-tight text-gray-900"
+                  >
+                    $0<span
+                      class="text-lg font-semibold leading-8 tracking-normal text-gray-500"
+                      >/mo</span
+                    >
+                  </div>
+                  <p class="mt-6 text-base leading-7 text-gray-600">
+                    You get a free blazing fast website for your business.
+                  </p>
+                </div>
+                <div class="flex flex-1 flex-col p-2">
+                  <div
+                    class="flex flex-1 flex-col justify-between rounded-2xl bg-gray-50 p-6 sm:p-8"
+                  >
+                    <ul role="list" class="space-y-6">
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Labor fees waived
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Landing page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          About page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Contact page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Free domain
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Free updates
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          24/7 maintenance
+                        </p>
+                      </li>
+                    </ul>
+                    <div class="mt-8">
+                      <a
+                        href="/#contact-sales"
+                        class="inline-block w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700"
+                        aria-describedby="free-tier"
+                        >Get started today</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col rounded-3xl bg-white shadow-xl ring-1 ring-black/10"
+              >
+                <div class="p-8 sm:p-10">
+                  <h3
+                    class="text-lg font-semibold leading-8 tracking-tight text-indigo-600"
+                    id="paid-tier"
+                  >
+                    Website with a login
+                  </h3>
+                  <div
+                    class="mt-4 flex items-baseline text-5xl font-bold tracking-tight text-gray-900"
+                  >
+                    $50<span
+                      class="text-lg font-semibold leading-8 tracking-normal text-gray-500"
+                      >/mo</span
+                    >
+                  </div>
+                  <p class="mt-6 text-base leading-7 text-gray-600">
+                    Need a blog, or a customer payment gateway with a rich
+                    dashboard? You will get the following:
+                  </p>
+                </div>
+                <div class="flex flex-1 flex-col p-2">
+                  <div
+                    class="flex flex-1 flex-col justify-between rounded-2xl bg-gray-50 p-6 sm:p-8"
+                  >
+                    <ul role="list" class="space-y-6">
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          25% discount on labor fees
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Landing page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          About page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Contact page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Registration page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Login page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Admin dashboard page
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Free domain
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          Free updates
+                        </p>
+                      </li>
+                      <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-6 w-6 text-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p class="ml-3 text-sm leading-6 text-gray-600">
+                          24/7 maintenance
+                        </p>
+                      </li>
+                    </ul>
+                    <div class="mt-8">
+                      <a
+                        href="/#contact-sales"
+                        class="inline-block w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700"
+                        aria-describedby="paid-tier"
+                        >Get started today</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-md lg:max-w-4xl">
+            <div
+              class="flex flex-col gap-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 lg:flex-row lg:items-center lg:gap-8"
+            >
+              <div class="lg:min-w-0 lg:flex-1">
+                <h3
+                  class="text-lg font-semibold leading-8 tracking-tight text-indigo-600"
+                >
+                  E-commerce
+                </h3>
+                <div class="mt-2 text-base leading-7 text-gray-600">
+                  <p class="mt-6 text-lg leading-8">
+                    If you're looking to increase sales, reach more people, and
+                    get your brand out there, then e-commerce is the way to go.
+                    E-commerce has come a long way in recent years, and it's not
+                    just for big brands anymore.
+                  </p>
+                  <p class="mt-6 text-lg leading-8">
+                    But before we dive into what it takes to create an
+                    e-commerce site, let's start by talking about why it's such
+                    a great idea.
+                    <span class="font-semibold text-gray-900"
+                      >E-commerce starts from: $1,499</span
+                    >.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="/#contact-sales"
+                  class="inline-block rounded-lg bg-indigo-50 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-indigo-700 hover:bg-indigo-100"
+                  >I want more sales <span aria-hidden="true">→</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="bg-gray-900 text-white py-16 px-8">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-sm font-medium"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="inline-block rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-6 text-center">
+      <p>&copy; 2024 My PWA Demo. All rights reserved.</p>
+      <p><a href="#main-content" class="underline">Back to top</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

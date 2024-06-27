@@ -1,0 +1,23 @@
+{
+  "name": "progressive-web-app-demo",
+  "version": "1.0.0",
+  "description": "A simple Progressive Web App demo including manifest.json, sw.js, script.js, styles.css, and index.html",
+  "main": "script.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PWA",
+    "Progressive Web App",
+    "demo"
+  ],
+  "author": "Adamu Muhammad Dankore",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
