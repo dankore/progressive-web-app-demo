@@ -1,3 +1,5 @@
+<img src="images/demo-homepage.png" alt="Demo app home page" >
+
 # Progressive Web App Demo
 
 This repository contains a simple Progressive Web App (PWA) demo. The following files are included in the project:
@@ -12,7 +14,7 @@ This repository contains a simple Progressive Web App (PWA) demo. The following 
 
 Here is a screenshot of the demo just before the install:
 
-<img src="demo-screenshot.png" alt="Demo Screenshot" height="400">
+<img src="images/demo-pwa-install.png" alt="Demo PWA install" height="300">
 
 
 ## Getting Started
